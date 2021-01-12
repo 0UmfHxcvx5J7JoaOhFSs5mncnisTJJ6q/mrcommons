@@ -24,7 +24,7 @@ calcEmisNitrogenOceans<-function(method="ACCMIP"){
     out<-add_columns(out,dim=3.1,addnm = c("n2o_n_direct","accumulation"))
     out[,,c("n2o_n_direct","accumulation")]=0
     # add global estimates for N2O and N burial from Voss et al (2013)
-    # Voss, M., H. W. Bange, J. W. Dippner, J. J. Middelburg, J. P. Montoya, and B. Ward. 2013. "The Marine Nitrogen Cycle: Recent Discoveries, Uncertainties and the Potential Relevance of Climate Change." Philosophical Transactions of the Royal Society B: Biological Sciences 368 (1621): 20130121–20130121. doi:10.1098/rstb.2013.0121.
+    # Voss, M., H. W. Bange, J. W. Dippner, J. J. Middelburg, J. P. Montoya, and B. Ward. 2013. "The Marine Nitrogen Cycle: Recent Discoveries, Uncertainties and the Potential Relevance of Climate Change." Philosophical Transactions of the Royal Society B: Biological Sciences 368 (1621): 20130121-20130121. doi:10.1098/rstb.2013.0121.
     vcat(2,"Values for oceans are inserted into the non-exisiting country Antarctica")
     out["ATA",,"n2o_n_direct"]<-3.8
     out["ATA",,"accumulation"]<-22

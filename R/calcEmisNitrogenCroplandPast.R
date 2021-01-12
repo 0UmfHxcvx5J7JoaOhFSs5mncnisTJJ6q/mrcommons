@@ -118,7 +118,7 @@ calcEmisNitrogenCroplandPast<-function(method="IPCC"){
     emissions<-collapseNames(budget[,,"surplus"])*emission_shares
     
     # assume globally same fraction of N2O in dentrification process. For comparison: Bessou et al comes to approximately 11%.
-    # Bessou, C., B. Mary, J. Léonard, M. Roussel, E. Gréhan, and B. Gabrielle. 2010. “Modelling Soil Compaction Impacts on Nitrous Oxide Emissions in Arable Fields.” European Journal of Soil Science 61 (3): 348–63. doi:10.1111/j.1365-2389.2010.01243.x.
+    # Bessou, C., B. Mary, J. Leonard, M. Roussel, E. Grehan, and B. Gabrielle. 2010. "Modelling Soil Compaction Impacts on Nitrous Oxide Emissions in Arable Fields." European Journal of Soil Science 61 (3): 348-63. doi:10.1111/j.1365-2389.2010.01243.x.
     
     vcat(1,"n2o emissions also occur in denitrication process. Nsurplus method should consider this")
     

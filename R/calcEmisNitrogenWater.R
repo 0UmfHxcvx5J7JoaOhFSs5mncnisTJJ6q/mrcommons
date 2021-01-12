@@ -43,7 +43,7 @@ calcEmisNitrogenWater<-function(method="Nsurplus"){
   # Kroeze et al (2005) then assume 5% of DIN to be lost as N2O in rivers, and 1% in estuaries
   # Add to Bouwmans soil N the sewage point sources that enter surface waters, which are 7.7 Tg
   # 65 TG = soilN--> surface water (Bouwman 2013)
-  # 7.7 Tg: 1.Morée, A. L., Beusen, A. H. W., Bouwman, A. F. & Willems, W. J. Exploring global nitrogen and phosphorus flows in urban wastes during the twentieth century. Global Biogeochemical Cycles 27, 836–846 (2013).
+  # 7.7 Tg: 1.Moree, A. L., Beusen, A. H. W., Bouwman, A. F. & Willems, W. J. Exploring global nitrogen and phosphorus flows in urban wastes during the twentieth century. Global Biogeochemical Cycles 27, 836-846 (2013).
   # 43.2 Tg: reaching ocean according to Seitinger
   
   emis[,,"freshwater"][,,"n2o_n_direct"]<-river_inflow / (65+7.7)*(18.9*0.06)

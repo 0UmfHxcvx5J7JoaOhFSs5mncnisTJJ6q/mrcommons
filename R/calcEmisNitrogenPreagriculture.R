@@ -64,7 +64,7 @@ calcEmisNitrogenPreagriculture<-function(cellular=FALSE, deposition=TRUE){
   
   nox<-(1.6+2.9)/inputs_nondesert*surplus_nondeserts
   nh3<-(6+1.6)/inputs_nondesert*surplus_nondeserts
-  # 6.8 Tg from Bouwman, A. F., Fung, I., Matthews, E. & John, J. Global analysis of the potential for N2O production in natural soils. Global Biogeochemical Cycles 7, 557–597 (1993).
+  # 6.8 Tg from Bouwman, A. F., Fung, I., Matthews, E. & John, J. Global analysis of the potential for N2O production in natural soils. Global Biogeochemical Cycles 7, 557-597 (1993).
   n2o<-(6.8)/inputs_nondesert*surplus_nondeserts  
   
   # n2

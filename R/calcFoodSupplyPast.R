@@ -86,11 +86,11 @@ calcFoodSupplyPast<-function(per_capita=TRUE, products=NULL, product_aggr=FALSE,
   
   out<-collapseNames(out[,,attributes])
   
-  return(list(x=out, #datensatz (muss auf Iso-länder ebene sein)
+  return(list(x=out, #datensatz (muss auf Iso-lander ebene sein)
               weight=weight, #wenn nicht absolute werte
               unit=unit,
               description="FAO food supply (including household waste)",
-              min=min #für error checking (zB zw 0 und 1)
+              min=min #fur error checking (zB zw 0 und 1)
               )
   ) 
 }

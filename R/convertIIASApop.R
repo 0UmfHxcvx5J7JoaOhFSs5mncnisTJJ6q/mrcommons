@@ -69,7 +69,7 @@ convertIIASApop <- function(x) {
     TWN[,t,] <- setYears( TWN[,t-5,],t) * (1 + gr_TWN[,t,]) 
   }
   TWN[,2010,] <- 23162.123
-  x <- mbind(x,TWN)      # FIXME woher die Daten für 2010??? historische Quelle
+  x <- mbind(x,TWN)      # FIXME woher die Daten fur 2010??? historische Quelle
   #--------------------------------------------------------------------------------
   
   #check whether the country list agrees with the list of countries in the madrat library

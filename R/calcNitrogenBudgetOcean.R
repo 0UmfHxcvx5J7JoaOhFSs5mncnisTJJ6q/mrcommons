@@ -36,7 +36,7 @@ calcNitrogenBudgetOcean<-function(deposition="ACCMIP",leaching="Nsurplus"){
   budget<-add_columns(riverdischarge,addnm = c("fixation_ocean","deposition","fish","surplus"))
   budget[,,c("fixation_ocean","deposition","fish","surplus")]=0
   budget[,,"fish"]<-fish
-  # 140 Tg: Voss, M. et al. The marine nitrogen cycle: recent discoveries, uncertainties and the potential relevance of climate change. Philosophical Transactions of the Royal Society B: Biological Sciences 368, 20130121–20130121 (2013).
+  # 140 Tg: Voss, M. et al. The marine nitrogen cycle: recent discoveries, uncertainties and the potential relevance of climate change. Philosophical Transactions of the Royal Society B: Biological Sciences 368, 20130121-20130121 (2013).
   budget["ATA",,"fixation_ocean"]<-140
   budget["ATA",,"deposition"]<-deposition
   budget["ATA",,"surplus"]<-dimSums(budget[,,c("fixation_ocean","deposition")],dim=c(1,3))-dimSums(budget[,,c("fish")],dim=c(1,3))

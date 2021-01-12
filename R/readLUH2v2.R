@@ -114,11 +114,11 @@ readLUH2v2 <- function(subtype) {
 
   } else if (grepl("ccode", subtype)) {
 
-    #Load raster data on 0.25° and extend to full grid
+    #Load raster data on 0.25? and extend to full grid
     ccode25         <- raster("staticData_quarterdeg.nc",varname="ccode")
     extent(ccode25) <- c(-180,180,-90,90)
 
-    #Create new raster object on 0.5° and re-project 0.25°-raster on 0.5°-raster
+    #Create new raster object on 0.5? and re-project 0.25?-raster on 0.5?-raster
     r50     <- raster(res=0.5)
     ccode50 <- projectRaster(ccode25,r50,over=TRUE, method="ngb") #re-project to regular grid
     

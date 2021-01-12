@@ -38,7 +38,7 @@ calcFoodWasteAndSewage<-function(historic=TRUE){
   }
   
   # assuming N:P ratio of 10:1 based on Moree et al (2013)
-  #Moree, A. L., A. H. W. Beusen, A. F. Bouwman, and W. J. Willems. 2013. “Exploring Global Nitrogen and Phosphorus Flows in Urban Wastes during the Twentieth Century.” Global Biogeochemical Cycles 27 (3): 836–46. doi:10.1002/gbc.20072.
+  #Moree, A. L., A. H. W. Beusen, A. F. Bouwman, and W. J. Willems. 2013. "Exploring Global Nitrogen and Phosphorus Flows in Urban Wastes during the Twentieth Century." Global Biogeochemical Cycles 27 (3): 836-46. doi:10.1002/gbc.20072.
   demand<-mbind(add_dimension(demand,dim=3.1,nm="nr"),add_dimension(demand,dim=3.1,nm="p")/10)
   # not differentiated by product
   demand<-dimSums(demand,dim="ItemCodeItem")

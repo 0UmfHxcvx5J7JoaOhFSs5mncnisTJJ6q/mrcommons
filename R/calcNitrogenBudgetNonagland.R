@@ -3,7 +3,7 @@
 #'
 #' @param deposition if FALSE, deposition is not accounted for in the distribution. Use FALSE to avoid circularities in calcNitrogenBudget
 #' @param max_nue NULL or a numeric value. if numeric, an additional N balanceflow is included that takes care that the nitrogen use efficiency does not exceed the numeric value in balanceflow.
-#' @param cellular TRUE returns output on 0.5° grid
+#' @param cellular TRUE returns output on 0.5? grid
 #' @return List of magpie object with results on country level, weight on country level, unit and description.
 #' @author Benjamin Leon Bodirsky
 #' @examples

@@ -41,7 +41,7 @@ calcIPCCfracLeach<-function(cellular=TRUE){
     old[,,]<-tmp
     pet<-as.magpie(aperm(old,c(3,2,1)))
   
-    #komisch, weicht ab wenn man einzelne punkte vergleicht. scheint auch von den nachbarmonaten abzuhängen.
+    #komisch, weicht ab wenn man einzelne punkte vergleicht. scheint auch von den nachbarmonaten abzuhangen.
     #pet[2,5,3]==thornthwaite(t[2,1,3],lat=lat[2,,])
     
     pet=pet[,past,]

@@ -91,8 +91,8 @@ readACCMIP <- function(subtype=NULL)
     d <- a
     
     getYears(d) <- c(paste("y",str_sub(file, -7, -4), sep = ""))
-    # kg(N)/m²/s to t(N)/ha/y
-    #1t(N)/ha/y = 1000kg(N) / 10.000m²/ (3600*24*365)s = 1000kg(N) / 10.000m² / 31536000s 
+    # kg(N)/m2/s to t(N)/ha/y
+    #1t(N)/ha/y = 1000kg(N) / 10.000m2/ (3600*24*365)s = 1000kg(N) / 10.000m2 / 31536000s 
     e <- d[,,"area",invert=T] * 315360000
     
     getNames(e)<-sub(getNames(e),pattern = "_",replacement = ".")
@@ -126,7 +126,7 @@ readACCMIP <- function(subtype=NULL)
       for (i in 1:nc_file_data$nvars) {
         data_vals <- ncvar_get(nc_file_data, varid = names(nc_file_data$var)[i])
         data_vals[data_vals == -9999] <- 0
-        #1t(N)/ha/y = 1000kg(N) / 10.000m²/ (3600*24*365)s = 1000kg(N) / 10.000m² / 31536000s 
+        #1t(N)/ha/y = 1000kg(N) / 10.000m2/ (3600*24*365)s = 1000kg(N) / 10.000m2 / 31536000s 
         sums[i] <- sum(data_vals * data_area * 31536)
         
         data_names[i] <- c(nc_file_data$var[[i]]$name)

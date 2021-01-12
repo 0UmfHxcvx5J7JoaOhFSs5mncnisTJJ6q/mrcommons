@@ -782,7 +782,7 @@ calcFAOmassbalance_pre <- function(years=paste0("y",(seq(1965,2010,5)))) {
     )
     
     #print("... harmonizing conversion factors within the rapeseed group")
-    # ziemlich hässlich
+    # ziemlich haesslich
     rapseed_group_in<-c("2558|Rape and Mustardseed","2560|Coconuts - Incl Copra",
                         "2561|Sesame seed","2570|Oilcrops, Other","2563|Olives (including preserved)")
     rapseed_group_oil<-c("2574|Rape and Mustard Oil","2578|Coconut Oil","2579|Sesameseed Oil","2586|Oilcrops Oil, Other")
@@ -1095,7 +1095,7 @@ calcFAOmassbalance_pre <- function(years=paste0("y",(seq(1965,2010,5)))) {
 #   )
 # 
 #   #print("... harmonizing conversion factors within the rapeseed group")
-#   # ziemlich hässlich
+#   # ziemlich haesslich
 #   rapseed_group_in<-c("2558|Rape and Mustardseed","2560|Coconuts - Incl Copra",
 #                    "2561|Sesame seed","2570|Oilcrops, Other","2563|Olives (including preserved)")
 #   rapseed_group_oil<-c("2574|Rape and Mustard Oil","2578|Coconut Oil","2579|Sesameseed Oil","2586|Oilcrops Oil, Other")

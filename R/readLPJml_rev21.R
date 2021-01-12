@@ -117,8 +117,8 @@ readLPJml_rev21<-function(subtype="soilc"){
       bands=nbands,
       soilcells=TRUE)
     
-    # Anders als soilc.bin hat das 5 layer, also die ersten 67420 Werte sind für layer 1 (0-200mm) und Jahr 1 (1951), die nächsten 67420 für layer 2 (201-500mm) und Jahr eins, dann layer 3 (501-1000mm), dann layer 4 (1001-2000mm), dann layer 5 (2001-3000mm), danach dann layer 1 für das 2. Jahr etc.
-    # Wir benötigen nur die obersten 2 layer
+    # Anders als soilc.bin hat das 5 layer, also die ersten 67420 Werte sind fur layer 1 (0-200mm) und Jahr 1 (1951), die nachsten 67420 fur layer 2 (201-500mm) und Jahr eins, dann layer 3 (501-1000mm), dann layer 4 (1001-2000mm), dann layer 5 (2001-3000mm), danach dann layer 1 fur das 2. Jahr etc.
+    # Wir benotigen nur die obersten 2 layer
     x<-x[,,1:2,1]
     x<-collapseNames(as.magpie(x))
     getNames(x)<-c("mm0_200","mm201_500")
